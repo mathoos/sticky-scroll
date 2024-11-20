@@ -1,0 +1,101 @@
+h1{
+    position : relative;
+    width : 100%;
+    font-size : 7vw;
+    line-height : 1.5;
+    font-variation-settings:
+        "wdth" 125,
+        "wght" $heavy;
+    opacity : 0;
+    transform : translateX(-100%);
+
+    @media screen and (max-width : 990px) {
+        font-size : 15vw;
+    }
+
+    span{
+        display : inline-block;
+        font-size : 2.3vw;
+        line-height : 1.2;
+        font-variation-settings:
+            "wdth" 125,
+            "wght" $thin;
+
+        @media screen and (max-width : 990px) {
+           font-size : 5.5vw;
+           line-height : 1.4;
+        }
+    }
+}
+
+h2{
+    font-size : 5vw;
+    text-transform: uppercase;
+    font-variation-settings:
+        "wdth" 125,
+        "wght" $heavy;
+
+    @media screen and (max-width : 990px) {
+        font-size : 8vw;
+    }
+
+    .box-title{
+        overflow : hidden;
+    } 
+}
+
+h3{
+    font-size : 3.5vw;
+    line-height : 1;
+    color : $noir;
+    text-transform: uppercase;
+    font-variation-settings:
+        "wdth" 125,
+        "wght" $heavy;
+        @media screen and (max-width : 990px) {
+            font-size : 8vw;
+        }
+}
+
+h4{
+    font-size : 3vw;
+    line-height : 1.1;
+    color : $blanc;
+    text-transform: uppercase;
+    font-variation-settings:
+        "wdth" 125,
+        "wght" $heavy;
+    @media screen and (max-width : 990px) {
+        font-size : 5vw;
+    }
+}
+
+
+p{
+    font-size : 1.1vw;
+    line-height : 1.5;
+    color : $noir;
+    font-variation-settings:
+        "wdth" 125,
+        "wght" $light;
+
+        &.title{
+            color : $violet;
+            text-transform : uppercase;
+            font-variation-settings:
+                "wdth" 125,
+                "wght" $bold;    
+        }
+
+    @media screen and (max-width : 990px) {
+        font-size : 4vw;
+    }
+}
+
+
+a{
+    text-decoration: none;
+    color : inherit;
+    padding : 0;
+    margin : 0;
+}

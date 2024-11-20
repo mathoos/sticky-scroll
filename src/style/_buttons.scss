@@ -1,0 +1,111 @@
+.bouton{
+    width : fit-content;
+    height : fit-content;
+    text-align : center;
+    padding : 1.3vh 2vw;  
+    border-radius : 100vmax;
+    border-width: 2px;
+    border-style: solid;
+    background-color: transparent;
+    transition : .3s ease;
+    font-variation-settings:
+        "wdth" 125,
+        "wght" $light;
+
+    @media screen and (max-width : 990px) {
+        padding : 1vh 5vw;
+        font-size : 4vw;
+        border-width : 1px;
+    }
+
+    &_title{
+        padding : 1vh 2.3vw;
+        line-height : 1;
+        font-variation-settings:
+        "wdth" 125,
+        "wght" $thin;
+        @media screen and (max-width : 990px) {
+            font-size : 5.5vw;
+            padding : .7vh 6vw;
+            border-width : 1px;
+        }
+    }
+
+    &_nav{
+        color : $violet;
+        text-transform: uppercase;
+        border : none;
+        font-variation-settings:
+            "wdth" 125,
+            "wght" $semibold;
+        transition : .3s ease;     
+
+        &.active {
+            background-color: $noir;
+            color : $blanc;
+        }
+
+        &:hover:not(.active){
+            color : $noir;
+        }
+
+        @media screen and (max-width : 990px) {
+            display : none;
+        }
+    }
+
+    &_noir{
+        color : $noir;
+        border-color : $noir;
+        
+        &:hover{
+            background-color: $noir;
+            border-color : transparent;
+            color : $blanc;
+        }
+    }
+
+    &_violet{
+        color : $violet;
+        border-color : $violet;
+
+        &:hover{
+            background-color: $violet;
+            border-color : transparent;
+            color : $blanc;
+        }
+    } 
+
+    &_blanc{
+        color : $blanc;
+        border-color : $blanc;
+
+        &:hover{
+            background-color: $blanc;
+            border-color : transparent;
+            color : $noir;
+        }
+    } 
+
+    &_bgNoir{
+        color : $blanc;
+        border-color : $noir;
+        background-color: $noir;
+        
+        &:hover{
+            background-color: transparent;
+            color : $noir;
+        }
+    }
+
+    &_bgBlanc{
+        color : $noir;
+        border-color : $noir;
+        background-color: $blanc;
+        
+        &:hover{
+            background-color: transparent;
+            color : $noir;
+        }
+    }
+}
